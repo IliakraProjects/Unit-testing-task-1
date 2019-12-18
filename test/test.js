@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import indicateHealth from '../src/apps/app.js';
 
 test('level of health', () => {
