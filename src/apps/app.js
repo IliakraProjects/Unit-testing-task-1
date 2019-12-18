@@ -1,13 +1,13 @@
-const personHealth = { name: 'Маг', health: 50 };
-export default function indicateHealth(personHealth) {
-    let health = personHealth.health;
-    if(health > 50) {
-        return 'healthy';
-    } else if (health < 50 && health > 15) {
-        return'wounded';
-    } else {
-        return'critical';
-    }
-};
+/* eslint-disable no-shadow */
 
-console.log(indicateHealth(personHealth));
+const personHealth = { name: 'Маг', health: 55 };
+export default function indicateHealth(personHealth) {
+  const healthLevel = personHealth.health;
+  if (healthLevel > 50) {
+    return 'healthy';
+  } if (healthLevel <= 50 && healthLevel >= 15) {
+    return 'wounded';
+  }
+  return 'critical';
+}
+indicateHealth(personHealth);
