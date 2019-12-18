@@ -12,7 +12,8 @@
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "prettier": "prettier  — write test/**/*.js"
   },
   "author": "coursar",
   "license": "MIT",
@@ -31,6 +32,7 @@
     "jest": "^24.9.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.8.0",
+    "prettier": "^1.19.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
